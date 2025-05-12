@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
     body {
-        background: ${({ theme }) => theme["gray-900"]};
+        background: ${({ theme }) => theme["gray-800"]};
         color: ${({ theme }) => theme["gray-100"]};
         -webkit-font-smoothing: antialiased;
     }
