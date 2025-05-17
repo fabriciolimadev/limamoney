@@ -33,4 +33,13 @@ interface PriceHighlightProps {
 export const PriceHighlight = styled.span<PriceHighlightProps>`
   color: ${({ theme, variant }) =>
     variant === "income" ? theme["green-300"] : theme["red-300"]};
+
+  &::before {
+    content: "${({ variant }) => (variant === "income" ? "" : "- ")}";
+
+    color: ${(props) =>
+      props.variant === "income"
+        ? props.theme["green-300"]
+        : props.theme["red-300"]};
+  }
 `;
