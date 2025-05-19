@@ -91,11 +91,9 @@ yarn dev
 
 ## 📱 Screenshots
 
-![Dashboard]()
-<a src="https://i.imgur.com/kkt4Wcw.png">
-![Transações](https://imgur.com/kkt4Wcw)
-![Nova Transação](/screenshots/new-transaction.png)
-
+![Dashboard](https://i.imgur.com/MnHKY9d.png)
+![Transações](https://imgur.com/kkt4Wcw.png)
+![Nova Transação](https://i.imgur.com/Avz3FF6.png)
 ## 🧪 Testes
 
 ```bash
