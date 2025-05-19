@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import {
+  ButtonDelete,
   PriceHighlight,
   TransactionsContainer,
   TransactionsTable,
@@ -9,9 +10,11 @@ import {
 import { SearchForm } from "./components/SearchForm";
 import { TransactionsContext } from "../../context/TransactionsContext";
 import { dateFormatter, priceFormatter } from "../../utils/formatter";
+import { Trash } from "phosphor-react";
 
 export const Transactions = () => {
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions, deleteTransaction, isLoading } =
+    useContext(TransactionsContext);
   return (
     <div>
       <Header />
@@ -20,10 +23,10 @@ export const Transactions = () => {
         <SearchForm />
         <TransactionsTable>
           <tbody>
-            {!transactions && (
+            {isLoading && (
               <tr>
-                <td colSpan={4} style={{ textAlign: "center" }}>
-                  Loading...
+                <td colSpan={5} style={{ textAlign: "center" }}>
+                  Carregando...
                 </td>
               </tr>
             )}
@@ -37,6 +40,13 @@ export const Transactions = () => {
                 </td>
                 <td>{transaction.category}</td>
                 <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
+                <td>
+                  <ButtonDelete
+                    onClick={() => deleteTransaction(transaction.id)}
+                  >
+                    <Trash size={24} />
+                  </ButtonDelete>
+                </td>
               </tr>
             ))}
           </tbody>

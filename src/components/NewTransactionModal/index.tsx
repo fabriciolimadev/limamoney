@@ -11,17 +11,21 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 
+import { useContext } from "react";
+import { TransactionsContext } from "../../context/TransactionsContext";
+
 const newTransactionFormSchema = z.object({
   description: z.string(),
-  price: z.number(),
+  value: z.number(),
   category: z.string(),
   type: z.enum(["income", "outcome"]),
 });
 
-type NewTransactionFormInputs = z.infer<typeof newTransactionFormSchema>;
+export type NewTransactionFormInputs = z.infer<typeof newTransactionFormSchema>;
 
 export const NewTransactionModal = () => {
-  const { register, handleSubmit, formState, control } =
+  const { createTransaction } = useContext(TransactionsContext);
+  const { register, handleSubmit, formState, control, reset } =
     useForm<NewTransactionFormInputs>({
       resolver: zodResolver(newTransactionFormSchema),
       defaultValues: {
@@ -30,8 +34,8 @@ export const NewTransactionModal = () => {
     });
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log(data);
+    createTransaction(data);
+    reset();
   }
 
   return (
@@ -53,7 +57,7 @@ export const NewTransactionModal = () => {
             type="number"
             placeholder="Preço"
             required
-            {...register("price", {
+            {...register("value", {
               valueAsNumber: true,
             })}
           />

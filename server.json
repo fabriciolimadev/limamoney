@@ -1,108 +1,84 @@
 {
-    "transactions" : [
-       {
-         "id" : 1,
-        "description" : "Despesas de supermercado",
-        "type" : "outcome",
-        "category" : "Alimentação",
-        "value" : 500,
-        "createdAt" : "2025-05-14T12:58:46.034Z"
-       },
-         {
-            "id" : 2,
-          "description" : "Salário",
-          "type" : "income",
-          "category" : "Trabalho",
-          "value" : 5000,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 3,
-          "description" : "Despesas de transporte",
-          "type" : "outcome",
-          "category" : "Transporte",
-          "value" : 200,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 4,
-          "description" : "Venda de produtos",
-          "type" : "income",
-          "category" : "Vendas",
-          "value" : 1500,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 5,
-          "description" : "Despesas de lazer",
-          "type" : "outcome",
-          "category" : "Lazer",
-          "value" : 300,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 6,
-          "description" : "Despesas de saúde",
-          "type" : "outcome",
-          "category" : "Saúde",
-          "value" : 400,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 7,
-          "description" : "Venda de serviços",
-          "type" : "income",
-          "category" : "Serviços",
-          "value" : 2000,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 8,
-          "description" : "Despesas de educação",
-          "type" : "outcome",
-          "category" : "Educação",
-          "value" : 600,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 9,
-          "description" : "Venda de produtos eletrônicos",
-          "type" : "income",
-          "category" : "Vendas",
-          "value" : 2500,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-         {
-            "id" : 10,
-          "description" : "Despesas de viagem",
-          "type" : "outcome",
-          "category" : "Viagem",
-          "value" : 800,
-          "createdAt" : "2025-05-14T12:58:46.034Z"
-         },
-            {
-                "id" : 11,
-            "description" : "Venda de produtos de beleza",
-            "type" : "income",
-            "category" : "Vendas",
-            "value" : 1200,
-            "createdAt" : "2025-05-14T12:58:46.034Z"
-            },
-            {
-                "id" : 12,
-            "description" : "Despesas de vestuário",
-            "type" : "outcome",
-            "category" : "Vestuário",
-            "value" : 700,
-            "createdAt" : "2025-05-14T12:58:46.034Z"
-            },
-            {
-                "id" : 13,
-            "description" : "Venda de produtos de limpeza",
-            "type" : "income",
-            "category" : "Vendas",
-            "value" : 900,
-            "createdAt" : "2025-05-14T12:58:46.034Z"
-            }        
-    ]
+  "transactions": [
+    {
+      "id": 3,
+      "description": "Despesas de transporte",
+      "type": "outcome",
+      "category": "Transporte",
+      "value": 200,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "id": 6,
+      "description": "Despesas de saúde",
+      "type": "outcome",
+      "category": "Saúde",
+      "value": 400,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "id": 7,
+      "description": "Venda de serviços",
+      "type": "income",
+      "category": "Serviços",
+      "value": 2000,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "id": 8,
+      "description": "Despesas de educação",
+      "type": "outcome",
+      "category": "Educação",
+      "value": 600,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "id": 9,
+      "description": "Venda de produtos eletrônicos",
+      "type": "income",
+      "category": "Vendas",
+      "value": 2500,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "id": 11,
+      "description": "Venda de produtos de beleza",
+      "type": "income",
+      "category": "Vendas",
+      "value": 1200,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "id": 12,
+      "description": "Despesas de vestuário",
+      "type": "outcome",
+      "category": "Vestuário",
+      "value": 700,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "id": 13,
+      "description": "Venda de produtos de limpeza",
+      "type": "income",
+      "category": "Vendas",
+      "value": 900,
+      "createdAt": "2025-05-14T12:58:46.034Z"
+    },
+    {
+      "description": "Salario",
+      "value": 7000,
+      "category": "Trabalho",
+      "type": "income",
+      "createdAt": "2025-05-19T00:00:49.224Z",
+      "id": 14
+    },
+    {
+      "description": "Mangá",
+      "value": 20,
+      "category": "Leitura",
+      "type": "outcome",
+      "createdAt": "2025-05-19T00:01:25.817Z",
+      "id": 15
+    }
+  ]
 }

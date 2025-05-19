@@ -13,5 +13,4 @@ export function App() {
       <GlobalStyle />
     </ThemeProvider>
   );
-  z;
 }
